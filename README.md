@@ -78,7 +78,7 @@ python enhance.py --mode stage2
 
 ---
 
-## Evaluation
+### 3) Evaluation
 
 `evaluation.py` script evaluate the enhancement results (SNR improvement, STOI, PESQ).
 
