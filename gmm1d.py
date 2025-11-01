@@ -9,7 +9,6 @@ from .dsp_utils import (
 )
 from .io_utils import safe_read_wav_mc
 
-
 class GMM1D:
     def __init__(self, K: int, max_iter: int = 100, tol: float = 1e-6, seed: int = 0):
         self.K = K
