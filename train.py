@@ -4,7 +4,6 @@ from config import Config, cfg_to_json
 from io_utils import list_train_samples
 from gmm1d import train_source_gmm, train_noise_gmm_per_channel
 
-
 def parse_args():
     p = argparse.ArgumentParser(add_help=False)
     p.add_argument('--root', type=str, default="./multi_yen_2-6")
