@@ -11,7 +11,6 @@ from dsp_utils import (
 )
 from gmm1d import load_source_U_s, load_noise_U_n
 
-
 def solve_alphas(phi_y: np.ndarray, U_s: np.ndarray, U_n: np.ndarray, ema: np.ndarray, eta: float):
     A = np.concatenate([U_s, U_n], axis=1)
     sol, *_ = np.linalg.lstsq(A, phi_y, rcond=None)
