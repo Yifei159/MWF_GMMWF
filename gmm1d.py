@@ -57,7 +57,6 @@ class GMM1D:
         self.pi = self.pi[idx]
         return self
 
-
 def train_source_gmm(cfg: Config, train_dirs):
     print('[train] source GMM')
     freqs = None
