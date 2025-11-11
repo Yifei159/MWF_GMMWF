@@ -92,7 +92,6 @@ def train_source_gmm(cfg: Config, train_dirs):
     print('[train] saved source_gmm.npz')
     return {'U_s': U_s, 'freqs': freqs}
 
-
 def train_noise_gmm_per_channel(cfg: Config, train_dirs):
     print('[train] noise GMM per channel')
     nC = cfg.n_channels
