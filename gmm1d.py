@@ -163,7 +163,6 @@ def train_noise_gmm_per_channel(cfg: Config, train_dirs):
         print(f'[train] saved noise_gmm_ch{q}.npz')
     return results
 
-
 def load_source_U_s(stats_dir: str):
     d = np.load(os.path.join(stats_dir, 'source_gmm.npz'), allow_pickle=True)
     U_s = d['U_s']
