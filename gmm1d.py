@@ -171,7 +171,6 @@ def load_source_U_s(stats_dir: str):
     freqs = np.array(meta['freqs'])
     return U_s, freqs
 
-
 def load_noise_U_n(stats_dir: str, q: int):
     d = np.load(os.path.join(stats_dir, f'noise_gmm_ch{q}.npz'), allow_pickle=True)
     U_n = d['U_n']
